@@ -1,0 +1,62 @@
+/* Store this code in 'style.css' file inside the 'static' folder*/
+
+			.form-group{
+				padding: 10px 120px;
+				width: 150px;
+				height: 90px;
+				background-color: #99ffff;
+			}
+
+			.border{
+				padding: 80px 50px;
+				width: 400px;
+				height: 750px;
+				border: 1px solid #236B8E;
+				border-radius: 0px;
+				background-color: #99ffff
+;
+			}
+
+			.col-md-4 col-md-offset-4 {
+				padding: 10px 40px;
+				background-color: #236B8E;
+				color: #FFFFFF;
+				font-style: oblique;
+				font-weight: bold;
+				border-radius: 10px;
+			}
+
+			.textbox{
+				padding: 20px 40px;
+				background-color: #236B8E;
+				text-color: #FFFFFF;
+				border-radius: 10px;
+			}
+
+			::placeholder {
+				color: #FFFFFF;
+				opacity: 2;
+				font-style: oblique;
+				font-weight: bold;
+			}
+
+			.word{
+				color: #FFFFFF;
+				font-style: oblique;
+				font-weight: bold;
+			}
+
+			.bottom{
+				color: #236B8E;
+				font-style: oblique;
+				font-weight: bold;
+			}
+			aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+</style>

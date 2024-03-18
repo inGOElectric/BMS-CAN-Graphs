@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+<h1>Acceleration Count using Speed and Time Data</h1>
+<body style="background-color: #e6ffff;">
+
+<form method=post enctype=multipart/form-data>
+    <input type=file name=file>
+    <input type=submit value=Upload>
+</form>
+<div id='chart' class='chart'”></div>
+<div allign='left' class='chart'”></div>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<p>the acceleration count lower end below 5 and upper end limits in between above 15 and bilow 30 is.....{{count_result1}}  </p>
+<p>the acceleration count lower end below 5 and upper end limits in between above 16 and bilow 28 is.....{{count_result2}}  </p>
+<p>the acceleration count lower end below 5  and upper end limits in between above 18 and bilow 26 is.....{{count_result3}}  </p>
+
+<script type='text/javascript'>
+  var graphs = {{graphJSON | safe}};
+  Plotly.plot('chart',graphs,{});
+</script>
+<aside>
+
+        <div align="left">
+            <div style="height:300px;overflow:scroll;">
+
+            <table>
+                <h1>
+                <!--Displaying the converted table-->
+                     {% for table in tables %}
+                    <h2>{{titles[loop.index]}}</h2>
+                    {{ table|safe }}
+                    {% endfor %}
+                </h1>
+            </table>
+        </div>
+</aside>
+
+            <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+</div>
+
+<script type='text/javascript'>
+  var graphs = {{graphJSON | safe}};
+  Plotly.plot('chart',graphs,{});
+</script>
+
+</body>
+</html>
