@@ -332,4 +332,4 @@ def upload():
         return render_template('upload1.html')
 if __name__ == '__main__':
     application.secret_key = 'mysecret'
-    application.run(debug=False,port="11112")
+    application.run(host='0.0.0.0',port=8080)
