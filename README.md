@@ -15,3 +15,7 @@ step-by-step instructions
 * Python(3.11)
 * plotly
 * pandas
+
+## Dashboard page
+
+![Project Screenshot](https://i.imgur.com/jV2hvOA.jpg)
